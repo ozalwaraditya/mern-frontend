@@ -6,7 +6,7 @@ function App() {
 
   const checkApi = async () => {
     try {
-      const res = await axios.get("https://mern-backend-gold.vercel.app/");
+      const res = await axios.get("https://mern-backend-gold.vercel.app/api");
       setStatus(res.data.message || "API is working!");
     } catch (error) {
       setStatus(
